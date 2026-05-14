@@ -10,6 +10,10 @@ test('average of empty array is 0', () => {
   assert.equal(average([]), 0)
 })
 
+test('average of non-array input is 0', () => {
+  assert.equal(average(null), 0)
+})
+
 test('average of single element is that element', () => {
   assert.equal(average([7]), 7)
 })
